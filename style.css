@@ -16,7 +16,7 @@ a {
 }
 
 html, body {
-	background: #f1f2ff;
+	background: #f2f4f6;
 	font-family: 'Lato', helvetica, arial, sans-serif;
 	font-size: 16px;
 	color: #222;
@@ -208,7 +208,7 @@ section:last-child {
 }
 
 .highlighted-text {
-	background-color: #cfdfe9;
+	background-color: #d4e1e9;
 	color: #2e2e2e;
 }
 
