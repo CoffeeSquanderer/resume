@@ -61,17 +61,17 @@ p {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-#main-area {
+.main-area {
 	padding: 0 40px;
 }
 
-#headshot {
-	width: 12.5%;
+.headshot {
+	width: 90px;
 	float: left;
 	margin-right: 30px;
 }
 
-#headshot img {
+.headshot img {
 	width: 100%;
 	height: auto;
 	-webkit-border-radius: 50px;
@@ -89,13 +89,12 @@ p {
 }
 
 .contact-details ul li {
-	margin-bottom: 3px;
+	margin-bottom: 5px;
 	color: #444;
 }
 
 .contact-details ul li a, a[href^=tel] {
 	color: #444; 
-	/* text-decoration: none; */
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
 	-o-transition: all .3s ease-in;
@@ -132,6 +131,7 @@ section:last-child {
 .section-title {
 	float: left;
 	width: 25%;
+	margin-bottom: 5px;
 }
 
 .section-content {
@@ -141,16 +141,15 @@ section:last-child {
 
 .section-title h1 {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	/* font-style: italic; */
 	font-size: 1.3em;
 	color: #0D0D0D;
+	padding-right: 10px;
 }
 
 .section-content h2 {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 1.3em;
 	font-weight: bold;
-	/* margin-bottom: -2px; */
 }
 
 .section-content h3 {
@@ -212,11 +211,7 @@ section:last-child {
 	color: #2e2e2e;
 }
 
-@media all and (min-width: 602px) and (max-width: 800px) {
-	#headshot {
-		display: none;
-	}
-	
+@media all and (min-width: 602px) and (max-width: 800px) {	
 	.key-skills {
 		-moz-column-count:2;
 		-webkit-column-count:2;
@@ -224,18 +219,22 @@ section:last-child {
 	}
 }
 
-@media all and (max-width: 601px) {
+@media all and (max-width: 761px) {
 	#cv {
 		width: 95%;
 		margin: 10px auto;
 		min-width: 280px;
 	}
 	
-	#headshot {
+	.headshot {
 		display: none;
 	}
+
+	.contact-details {
+		margin-top: 20px;
+	}
 	
-	.name, #contact-details {
+	.name, .contact-details {
 		float: none;
 		width: 100%;
 		text-align: center;
@@ -287,7 +286,12 @@ section:last-child {
 @media print {
     #cv {
         width: 100%;
-    }
+	}
+	
+	.section-title {
+		margin-bottom: 10px;
+		line-height: 1.2em;
+	}
 }
 
 @-webkit-keyframes reset {
@@ -365,48 +369,4 @@ section:last-child {
 	animation-name: reset, fade-in;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
-}
-
-.quick-fade {
-    -webkit-animation-name: reset, fade-in;
-    -webkit-animation-duration: 2.5s;
-    -webkit-animation-timing-function: ease-in;
-	
-	-moz-animation-name: reset, fade-in;
-    -moz-animation-duration: 2.5s;
-    -moz-animation-timing-function: ease-in;
-	
-	animation-name: reset, fade-in;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in;
-}
- 
-.delay-one {
-	-webkit-animation-delay: 0, .5s;
-	-moz-animation-delay: 0, .5s;
-	animation-delay: 0, .5s;
-}
-
-.delay-two {
-	-webkit-animation-delay: 0, 1s;
-	-moz-animation-delay: 0, 1s;
-	animation-delay: 0, 1s;
-}
-
-.delay-three {
-	-webkit-animation-delay: 0, 1.5s;
-	-moz-animation-delay: 0, 1.5s;
-	animation-delay: 0, 1.5s;
-}
-
-.delay-four {
-	-webkit-animation-delay: 0, 2s;
-	-moz-animation-delay: 0, 2s;
-	animation-delay: 0, 2s;
-}
-
-.delay-five {
-	-webkit-animation-delay: 0, 2.5s;
-	-moz-animation-delay: 0, 2.5s;
-	animation-delay: 0, 2.5s;
 }
